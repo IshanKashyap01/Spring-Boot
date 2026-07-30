@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+    <!-- insurance beans -->
+    <bean id="health" class="com.example.cover_mate.insurance.HealthInsurance">
+        <property name="Smoker" value="false"></property>
+        <property name="Drinker" value="false"></property>
+        <property name="hasPreviousConditions" value="false"></property>
+    </bean>
+    <bean id="term" class="com.example.cover_mate.insurance.TermInsurance">
+        <property name="Married" value="false"></property>
+        <property name="Salaried" value="false"></property>
+        <property name="hasChildren" value="false"></property>
+    </bean>
+    <!-- Customer bean -->
+    <bean id="customerHealth" class="com.example.cover_mate.Customer">
+        <property name="insurance" ref="health"></property>
+    </bean>
+    <bean id="customerTerm" class="com.example.cover_mate.Customer">
+        <property name="insurance" ref="term"></property>
+    </bean>
+</beans>

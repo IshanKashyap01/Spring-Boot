@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+>
+    <!-- tyre beans -->
+    <bean id="allWeather" class="com.example.car_dealership.tyre.AllWeatherTyre"></bean>
+    <bean id="heavy" class="com.example.car_dealership.tyre.HeavyTyre"></bean>
+    <bean id="sportsTyre" class="com.example.car_dealership.tyre.SportsTyre"></bean>
+    <!-- car beans -->
+    <bean id="family" class="com.example.car_dealership.car.FamilyCar">
+        <constructor-arg ref="allWeather"></constructor-arg>
+    </bean>
+    <bean id="familySportsTyre" class="com.example.car_dealership.car.FamilyCar">
+        <property name="tyres" ref="sportsTyre"></property>
+    </bean>
+    <bean id="sports" class="com.example.car_dealership.car.SportsCar">
+        <constructor-arg ref="sportsTyre"></constructor-arg>
+    </bean>
+    <bean id="truck" class="com.example.car_dealership.car.Truck">
+        <constructor-arg ref="heavy"></constructor-arg>
+    </bean>
+</beans>

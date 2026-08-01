@@ -19,3 +19,5 @@ Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)
 ## Week 2
 
 1. [MVC Core](MVC%20Core/)
+
+2. [MVC and Web](MVC%20and%20Web/)

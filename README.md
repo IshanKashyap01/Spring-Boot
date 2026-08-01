@@ -15,3 +15,7 @@ This is a 7 week course on Spring Boot.
 4. [Spring and Annotations](Spring%20and%20Annotations/)
 
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)
+
+## Week 2
+
+1. [MVC Core](MVC%20Core/)

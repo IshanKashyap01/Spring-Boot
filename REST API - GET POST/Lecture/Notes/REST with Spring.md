@@ -8,17 +8,17 @@ public class HotelController
     @Autowired
     HotelService hotelService;
 
-    @PostMapping("/add")
+    @PostMapping
     public void addHotel(@RequestBody Hotel hotel)
     {
         this.hotelService.add(hotel);
     }
-    @GetMapping("id/{id}")
+    @GetMapping("/{id}")
     public Hotel getHotel(@PathVariable int id)
     {
         return this.hotelService.get(id);
     }
-    @GetMapping("/all")
+    @GetMapping
     public List<Hotel> getAllHotels()
     {
         return this.hotelService.getAll();

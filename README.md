@@ -21,3 +21,5 @@ Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)
 1. [MVC Core](MVC%20Core/)
 
 2. [MVC and Web](MVC%20and%20Web/)
+
+3. [REST API - GET POST](REST%20API%20-%20GET%20POST/)

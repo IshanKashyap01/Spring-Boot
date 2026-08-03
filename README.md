@@ -14,4 +14,16 @@ This is a 7 week course on Spring Boot.
 
 4. [Spring and Annotations](Spring%20and%20Annotations/)
 
+## Week 2
+
+1. [MVC Core](MVC%20Core/)
+
+2. [MVC and Web](MVC%20and%20Web/)
+
+3. [REST API - GET POST](REST%20API%20-%20GET%20POST/)
+
+4. [REST API -PUT and DELETE](REST%20API%20-%20PUT%20and%20DELETE/)
+
+5. [Movie Booking Application](Movie%20Booking%20Application/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

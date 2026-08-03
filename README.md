@@ -26,4 +26,8 @@ This is a 7 week course on Spring Boot.
 
 5. [Movie Booking Application](Movie%20Booking%20Application/)
 
+## Week 3
+
+1. [REST Template](REST%20Template/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

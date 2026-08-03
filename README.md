@@ -24,4 +24,6 @@ This is a 7 week course on Spring Boot.
 
 4. [REST API -PUT and DELETE](REST%20API%20-%20PUT%20and%20DELETE/)
 
+5. [Movie Booking Application](Movie%20Booking%20Application/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

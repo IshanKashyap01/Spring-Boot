@@ -1,0 +1,73 @@
+package com.cn.cnpayment.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import com.cn.cnpayment.entity.Payment;
+import com.cn.cnpayment.service.PaymentService;
+import java.util.List;
+
+@RestController
+@RequestMapping("/payment")
+public class PaymentController {
+
+	@Autowired
+	PaymentService paymentService;
+
+	@GetMapping("/id/{id}")
+	public Payment getPaymentById(@PathVariable int id)
+	{
+		return paymentService.getPaymentById(id);
+	}
+
+	@GetMapping("/allPayments")
+	public List<Payment> getAllPayments()
+	{
+		return paymentService.getAllPayments();
+	}
+
+	@GetMapping("/paymentType/{paymentType}")
+	public List<Payment> getPaymentByPaymentType(@PathVariable String paymentType)
+	{
+		return paymentService.getPaymentByPaymentType(paymentType);
+	}
+
+	@GetMapping("/description/{keyword}")
+	public List<Payment> getPaymentByDescriptionKeyword(@PathVariable String keyword)
+	{
+		return paymentService.getPaymentByDescriptionKeyword(keyword);
+	}
+
+	@PostMapping("/save")
+	public void addPayment(@RequestBody Payment payment){
+		 paymentService.addPayment(payment);
+	}
+
+
+	// a. DELETE "/payment/delete/id/{id}": It deletes a payment record from the database.
+	@DeleteMapping("/delete/id/{id}")
+	public void deletePayment(@PathVariable int id)
+	{
+		// 1. Call the required service method.
+		paymentService.delete(id);
+		// 2. Add proper annotation for DELETE mapping and attach the path variable to the method parameter.
+	}
+
+	// b. PUT "/payment/update": It updates a payment record in the database.
+	@PutMapping("/update")
+	public void updatePayment(@RequestBody Payment payment)
+	{
+		// 1. Call the required service method
+		paymentService.update(payment);
+		// 2. Add proper annotation for PUT Mapping and attach the required request body.
+	}
+
+
+	// c. PUT "/payment/update/{id}/description/{description}": It updates the payment description for a specific ID.
+	@PutMapping("/update/{id}/description/{description}")
+	public void updateDescription(@PathVariable int id, @PathVariable String description)
+	{
+		// 1. Call the required service method
+		paymentService.updateDescription(id, description);
+		// 2. Add proper annotation for PUT Mapping and attach the required path variables to the method parameter.
+	}
+}

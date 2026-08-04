@@ -30,4 +30,6 @@ This is a 7 week course on Spring Boot.
 
 1. [REST Template](REST%20Template/)
 
+2. [Hibernate and CRUD Operations](Hibernate%20and%20CRUD%20Operations/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

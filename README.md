@@ -34,4 +34,6 @@ This is a 7 week course on Spring Boot.
 
 3. [Hibernate and Relationships](Hibernate%20and%20Relationships/)
 
+4. [Expense Manager Application]
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

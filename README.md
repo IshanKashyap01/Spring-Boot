@@ -32,4 +32,6 @@ This is a 7 week course on Spring Boot.
 
 2. [Hibernate and CRUD Operations](Hibernate%20and%20CRUD%20Operations/)
 
+3. [Hibernate and Relationships](Hibernate%20and%20Relationships/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

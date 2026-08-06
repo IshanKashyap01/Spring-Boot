@@ -26,4 +26,14 @@ This is a 7 week course on Spring Boot.
 
 5. [Movie Booking Application](Movie%20Booking%20Application/)
 
+## Week 3
+
+1. [REST Template](REST%20Template/)
+
+2. [Hibernate and CRUD Operations](Hibernate%20and%20CRUD%20Operations/)
+
+3. [Hibernate and Relationships](Hibernate%20and%20Relationships/)
+
+4. [Expense Manager Application](Expense%20Manager%20Application/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

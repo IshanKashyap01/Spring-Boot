@@ -36,4 +36,8 @@ This is a 7 week course on Spring Boot.
 
 4. [Expense Manager Application](Expense%20Manager%20Application/)
 
+## Week 4
+
+1. [Spring Data and JPA](Spring%20Data%20and%20JPA/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

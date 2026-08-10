@@ -42,4 +42,6 @@ This is a 7 week course on Spring Boot.
 
 2. [Spring Data and JPA Queries](Spring%20Data%20and%20JPA%20Queries/)
 
+3. [E-Voting Application](E-Voting%20Application/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

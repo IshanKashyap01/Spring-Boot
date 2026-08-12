@@ -44,4 +44,8 @@ This is a 7 week course on Spring Boot.
 
 3. [E-Voting Application](E-Voting%20Application/)
 
+## Week 5
+
+1. [Introduction to Spring Security](Introduction%20to%20Spring%20Security/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

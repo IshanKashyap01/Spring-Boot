@@ -50,4 +50,6 @@ This is a 7 week course on Spring Boot.
 
 2. [User Persistence & JWT Authentication](User%20Persistence%20&%20JWT%20Authentication/)
 
+3. [Password Encoding & Security Practices](Password%20Encoding%20&%20Security%20Practices/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

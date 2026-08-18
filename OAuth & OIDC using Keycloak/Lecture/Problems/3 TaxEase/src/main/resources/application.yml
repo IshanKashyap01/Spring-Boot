@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/tax_application?createDatabaseIfNotExist=true
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    show-sql: true
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${client-id}
+            client-secret: ${client-secret}
+          keycloak:
+            client-id: demo-application
+            client-secret: OG1EF2riEKx1P7DieGS6iBPZBCZVqJkNGItTaIiTp1WDZ6IY1GV3QSOyuNTC84E6y6UUWorUebGiPQ9OViGCu4
+            scope: openid+profile+email
+            authorization-grant-type: authorization_code
+        provider:
+          keycloak:
+            issuer-uri: https://lemur-15.cloud-iam.com/auth/realms/ishan-kashyap
+
+server:
+  port: 8082
+
+keycloak:
+  realm: ishan-kashyap
+  auth-server-url: https://lemur-15.cloud-iam.com/auth/
+  resource: demo-application
+  public-client: true
+  bearer-only: true
+
+

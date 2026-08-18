@@ -44,4 +44,14 @@ This is a 7 week course on Spring Boot.
 
 3. [E-Voting Application](E-Voting%20Application/)
 
+## Week 5
+
+1. [Introduction to Spring Security](Introduction%20to%20Spring%20Security/)
+
+2. [User Persistence & JWT Authentication](User%20Persistence%20&%20JWT%20Authentication/)
+
+3. [Password Encoding & Security Practices](Password%20Encoding%20&%20Security%20Practices/)
+
+4. [OAuth & OIDC using Keycloak](OAuth%20&%20OIDC%20using%20Keycloak/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

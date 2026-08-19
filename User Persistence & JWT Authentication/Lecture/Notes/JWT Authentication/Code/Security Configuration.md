@@ -7,7 +7,7 @@
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class JwtSecurityConfig
 {
-    private final JwtAuthenticationFilter jutAuthFilter;
+    private final JwtAuthenticationFilter jwtAuthFilter;
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception

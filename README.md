@@ -58,4 +58,6 @@ This is a 7 week course on Spring Boot.
 
 1. [Mini Project: Secure Online Banking Application](Secure%20Online%20Banking%20Application/)
 
+2. [Spring Boot Actuator and Dev Tools](Spring%20Boot%20Actuator%20and%20Dev%20Tools/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

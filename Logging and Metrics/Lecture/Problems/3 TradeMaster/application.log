@@ -1,0 +1,79 @@
+2026-08-20T18:44:40.838+05:30  INFO 54808 --- [main] c.cn.trademaster.TradeMasterApplication  : Starting TradeMasterApplication using Java 21.0.11 with PID 54808 (/home/ishan/Study/CN/Bootcamp/Web Dev/Spring Boot/Logging and Metrics/Lecture/Problems/3 TradeMaster/target/classes started by ishan in /home/ishan/Study/CN/Bootcamp/Web Dev/Spring Boot/Logging and Metrics/Lecture/Problems/3 TradeMaster)
+2026-08-20T18:44:40.840+05:30 DEBUG 54808 --- [main] c.cn.trademaster.TradeMasterApplication  : Running with Spring Boot v3.0.0, Spring v6.0.2
+2026-08-20T18:44:40.841+05:30  INFO 54808 --- [main] c.cn.trademaster.TradeMasterApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-08-20T18:44:41.739+05:30  INFO 54808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-20T18:44:41.785+05:30  INFO 54808 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2026-08-20T18:44:42.228+05:30  INFO 54808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-08-20T18:44:42.238+05:30  INFO 54808 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-20T18:44:42.238+05:30  INFO 54808 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2026-08-20T18:44:42.306+05:30  INFO 54808 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-20T18:44:42.307+05:30  INFO 54808 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1414 ms
+2026-08-20T18:44:42.538+05:30  INFO 54808 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-20T18:44:42.596+05:30  INFO 54808 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2026-08-20T18:44:42.760+05:30  WARN 54808 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2026-08-20T18:44:42.858+05:30  INFO 54808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-20T18:44:43.273+05:30  INFO 54808 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@517a46f3
+2026-08-20T18:44:43.275+05:30  INFO 54808 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-20T18:44:43.340+05:30  INFO 54808 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2026-08-20T18:44:44.046+05:30  INFO 54808 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-08-20T18:44:44.051+05:30  INFO 54808 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-20T18:44:44.297+05:30  WARN 54808 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-20T18:44:44.641+05:30  INFO 54808 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2026-08-20T18:44:44.718+05:30  INFO 54808 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-08-20T18:44:44.738+05:30  INFO 54808 --- [main] c.cn.trademaster.TradeMasterApplication  : Started TradeMasterApplication in 4.378 seconds (process running for 4.755)
+2026-08-20T18:47:09.089+05:30  INFO 54808 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-20T18:47:09.091+05:30  INFO 54808 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-20T18:47:09.096+05:30  INFO 54808 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2026-08-20T18:48:30.740+05:30 ERROR 54808 --- [http-nio-8081-exec-6] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:48:34.192+05:30 ERROR 54808 --- [http-nio-8081-exec-7] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:48:34.908+05:30 ERROR 54808 --- [http-nio-8081-exec-8] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:48:35.095+05:30 ERROR 54808 --- [http-nio-8081-exec-9] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:48:35.244+05:30 ERROR 54808 --- [http-nio-8081-exec-10] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:48:35.410+05:30 ERROR 54808 --- [http-nio-8081-exec-1] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:49:25.187+05:30  INFO 54808 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-20T18:49:25.188+05:30  INFO 54808 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2026-08-20T18:49:25.231+05:30  INFO 54808 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-20T18:49:25.241+05:30  INFO 54808 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-08-20T18:50:00.443+05:30  INFO 58284 --- [main] c.cn.trademaster.TradeMasterApplication  : Starting TradeMasterApplication using Java 21.0.11 with PID 58284 (/home/ishan/Study/CN/Bootcamp/Web Dev/Spring Boot/Logging and Metrics/Lecture/Problems/3 TradeMaster/target/classes started by ishan in /home/ishan/Study/CN/Bootcamp/Web Dev/Spring Boot/Logging and Metrics/Lecture/Problems/3 TradeMaster)
+2026-08-20T18:50:00.444+05:30 DEBUG 58284 --- [main] c.cn.trademaster.TradeMasterApplication  : Running with Spring Boot v3.0.0, Spring v6.0.2
+2026-08-20T18:50:00.444+05:30  INFO 58284 --- [main] c.cn.trademaster.TradeMasterApplication  : No active profile set, falling back to 1 default profile: "default"
+2026-08-20T18:50:01.046+05:30  INFO 58284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-20T18:50:01.092+05:30  INFO 58284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+2026-08-20T18:50:01.472+05:30  INFO 58284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2026-08-20T18:50:01.481+05:30  INFO 58284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-08-20T18:50:01.482+05:30  INFO 58284 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.1]
+2026-08-20T18:50:01.554+05:30  INFO 58284 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-08-20T18:50:01.554+05:30  INFO 58284 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1076 ms
+2026-08-20T18:50:01.752+05:30  INFO 58284 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-20T18:50:01.781+05:30  INFO 58284 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.5.Final
+2026-08-20T18:50:01.878+05:30  WARN 58284 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2026-08-20T18:50:01.952+05:30  INFO 58284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-08-20T18:50:02.240+05:30  INFO 58284 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63e70bf9
+2026-08-20T18:50:02.243+05:30  INFO 58284 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-08-20T18:50:02.290+05:30  INFO 58284 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2026-08-20T18:50:02.959+05:30  INFO 58284 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2026-08-20T18:50:02.964+05:30  INFO 58284 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-20T18:50:03.199+05:30  WARN 58284 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-20T18:50:03.533+05:30  INFO 58284 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2026-08-20T18:50:03.617+05:30  INFO 58284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2026-08-20T18:50:03.627+05:30  INFO 58284 --- [main] c.cn.trademaster.TradeMasterApplication  : Started TradeMasterApplication in 3.55 seconds (process running for 3.801)
+2026-08-20T18:50:16.050+05:30  INFO 58284 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-20T18:50:16.051+05:30  INFO 58284 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-08-20T18:50:16.053+05:30  INFO 58284 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-08-20T18:50:16.175+05:30 ERROR 58284 --- [http-nio-8081-exec-1] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:50:16.765+05:30 ERROR 58284 --- [http-nio-8081-exec-2] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:50:16.952+05:30 ERROR 58284 --- [http-nio-8081-exec-3] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:50:17.103+05:30 ERROR 58284 --- [http-nio-8081-exec-4] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:50:17.285+05:30 ERROR 58284 --- [http-nio-8081-exec-5] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:50:17.440+05:30 ERROR 58284 --- [http-nio-8081-exec-6] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:50:17.599+05:30 ERROR 58284 --- [http-nio-8081-exec-7] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:56:51.048+05:30 ERROR 58284 --- [http-nio-8081-exec-1] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:56:51.562+05:30 ERROR 58284 --- [http-nio-8081-exec-2] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:56:51.722+05:30 ERROR 58284 --- [http-nio-8081-exec-3] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:56:51.898+05:30 ERROR 58284 --- [http-nio-8081-exec-4] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:56:52.051+05:30 ERROR 58284 --- [http-nio-8081-exec-5] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T18:56:52.423+05:30 ERROR 58284 --- [http-nio-8081-exec-6] c.cn.trademaster.service.TradeService    : No trades found for the username : 'ishan'
+2026-08-20T19:03:36.675+05:30  INFO 58284 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-20T19:03:36.676+05:30  INFO 58284 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2026-08-20T19:03:36.724+05:30  INFO 58284 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-08-20T19:03:36.738+05:30  INFO 58284 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

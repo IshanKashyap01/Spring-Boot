@@ -62,4 +62,6 @@ This is a 7 week course on Spring Boot.
 
 3. [Logging and Metrics](Logging%20and%20Metrics/)
 
+4. [JUnit Testing](JUnit%20Testing/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

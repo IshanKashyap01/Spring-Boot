@@ -54,4 +54,16 @@ This is a 7 week course on Spring Boot.
 
 4. [OAuth & OIDC using Keycloak](OAuth%20&%20OIDC%20using%20Keycloak/)
 
+## Week 6
+
+1. [Mini Project: Secure Online Banking Application](Secure%20Online%20Banking%20Application/)
+
+2. [Spring Boot Actuator and Dev Tools](Spring%20Boot%20Actuator%20and%20Dev%20Tools/)
+
+3. [Logging and Metrics](Logging%20and%20Metrics/)
+
+4. [JUnit Testing](JUnit%20Testing/)
+
+5. [Microservice](Microservice/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

@@ -5,7 +5,7 @@
 @Table(name = "item")
 public class Item
 {
-    @OneToMany(mappedBy = "item" cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "item", cascade = CascadeType.ALL)
     private List<Review> reviews;
 }
 ```

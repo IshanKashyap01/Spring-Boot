@@ -1,0 +1,35 @@
+package com.security.bank.service;
+
+import com.security.bank.dto.*;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+import org.springframework.security.authentication.*;
+import com.security.bank.jwt.JwtAuthenticationHelper;
+
+@Service
+@RequiredArgsConstructor
+public class AuthService
+{
+    private final AuthenticationManager manager;
+    private final JwtAuthenticationHelper helper;
+
+    public JwtResponse doAuthenticate(JwtRequest request)
+    {
+        authenticate(request.getUsername(), request.getPassword());
+        String token = this.helper.generateToken(request.getUsername());
+        return JwtResponse.builder().jwtToken(token).build();
+    }
+
+    private void authenticate(String username, String password)
+    {
+        UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(username, password);
+        try
+        {
+            this.manager.authenticate(authToken);
+        }
+        catch(BadCredentialsException e)
+        {
+            throw new BadCredentialsException("invalid username or password");
+        }
+    }
+}

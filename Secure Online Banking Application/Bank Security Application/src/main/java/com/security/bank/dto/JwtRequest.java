@@ -1,0 +1,13 @@
+package com.security.bank.dto;
+
+import lombok.*;
+
+@Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class JwtRequest
+{
+    private String username;
+    private String password;
+}

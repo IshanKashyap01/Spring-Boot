@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: course-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/edtech_course_service?useSSL=false
+    username: root
+    password: 1234
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+server:
+  port: 8081
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+management:
+  health:
+    circuitbreakers:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+hystrix:
+  dashboard:
+    proxy-stream-allow-list: '*'

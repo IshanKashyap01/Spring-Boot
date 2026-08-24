@@ -66,4 +66,8 @@ This is a 7 week course on Spring Boot.
 
 5. [Microservice](Microservice/)
 
+## Week 7
+
+1. [E-commerce Application](E-Commerce%20Application/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)

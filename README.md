@@ -70,4 +70,8 @@ This is a 7 week course on Spring Boot.
 
 1. [E-commerce Application](E-Commerce%20Application/)
 
+## Updates in Course Content
+
+1. [Spring Data JPA: Advance](Spring%20Data%20JPA%20Advance/)
+
 Note: [*Commit message tags*](<https://bit.ly/commit-message-tags>)
